@@ -1,19 +1,15 @@
 package com.example.calculator;
 
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements CalculatorView {
-
-
+public class CalculatorActivity extends AppCompatActivity implements CalculatorView {
     private TextView result_window;
 
     private CalculatorPresenter presenter;
