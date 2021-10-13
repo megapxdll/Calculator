@@ -1,30 +1,19 @@
 package com.example.calculator;
 
-import android.support.annotation.NonNull;
+import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.Serializable;
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity implements CalculatorView {
-
-
+public class CalculatorActivity extends AppCompatActivity implements CalculatorView {
     private TextView result_window;
 
     private CalculatorPresenter presenter;
 
-    String var = "0";
-
-    private final static String result_var = "result";
-
-    private final static String textview_text = "text";
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -95,23 +84,5 @@ public class MainActivity extends AppCompatActivity implements CalculatorView {
     @Override
     public void showResult(String result) {
         result_window.setText(result);
-    }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState) {
-        outState.putString(result_var, " ");
-        TextView text = (TextView) result_window;
-        outState.putString(textview_text, result_window.getText().toString());
-        super.onSaveInstanceState(outState);
-    }
-
-    @Override
-    protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
-        super.onRestoreInstanceState(savedInstanceState);
-
-        var = savedInstanceState.getString(result_var);
-        String textview = savedInstanceState.getString(textview_text);
-        TextView result_view = (TextView) result_window;
-        result_view.setText(textview_text);
     }
 }
