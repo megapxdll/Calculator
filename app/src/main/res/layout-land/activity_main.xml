@@ -7,11 +7,12 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/result_window"
+        android:id="@+id/txt_result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
-        tools:text="@string/_0" />
+        android:textSize="@dimen/calc_result_size"
+        tools:text="100500" />
 
     <GridLayout
         android:layout_width="match_parent"
@@ -23,7 +24,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_1"
-            android:layout_margin="@dimen/card_margin"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal" />
 
@@ -33,7 +33,6 @@
             android:layout_height="wrap_content"
             android:text="@string/button_2"
             android:layout_columnWeight="1"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -42,15 +41,13 @@
             android:layout_height="wrap_content"
             android:text="@string/button_3"
             android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal"
-            android:layout_margin="@dimen/card_margin" />
+            android:layout_gravity="fill_horizontal" />
 
         <Button
             android:id="@+id/button_plus"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_plus"
-            android:layout_margin="@dimen/card_margin"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal" />
 
@@ -59,7 +56,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_4"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -67,7 +63,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_5"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -75,7 +70,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_6"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -91,7 +85,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_7"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -99,7 +92,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_8"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -107,7 +99,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_9"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -124,7 +115,6 @@
             android:layout_height="wrap_content"
             android:text="@string/button_0"
             android:layout_columnSpan="2"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -132,7 +122,6 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="@string/button_point"
-            android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
         <Button
@@ -144,6 +133,4 @@
             android:layout_gravity="fill_horizontal" />
 
     </GridLayout>
-
-
 </LinearLayout>
