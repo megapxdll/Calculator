@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.calculator.R;
 import com.example.calculator.domain.CalculatorImp;
 import com.example.calculator.domain.Operation;
-import com.example.calculator.storage.ThemeStorage;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,10 +31,6 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        ThemeStorage storage = new ThemeStorage(this);
-
-        setTheme(storage.getTheme().getTheme());
 
         setContentView(R.layout.activity_main);
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="16dp"
+    android:padding="@dimen/calc_layout_padding"
     android:orientation="vertical">
 
     <TextView
@@ -11,6 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="end"
+        android:textSize="@dimen/calc_result_size"
+        android:textColor="@color/calc_result_color"
         tools:text="@string/_0" />
 
     <GridLayout
@@ -20,7 +22,7 @@
 
         <Button
             android:id="@+id/button_1"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_1"
             android:layout_margin="@dimen/card_margin"
@@ -29,7 +31,7 @@
 
         <Button
             android:id="@+id/button_2"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_2"
             android:layout_columnWeight="1"
@@ -38,7 +40,7 @@
 
         <Button
             android:id="@+id/button_3"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_3"
             android:layout_columnWeight="1"
@@ -47,16 +49,17 @@
 
         <Button
             android:id="@+id/button_plus"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_plus"
             android:layout_margin="@dimen/card_margin"
             android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal" />
+            android:layout_gravity="fill_horizontal"
+            style="@style/CalcButton.Operation" />
 
         <Button
             android:id="@+id/button_4"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_4"
             android:layout_margin="@dimen/card_margin"
@@ -64,7 +67,7 @@
 
         <Button
             android:id="@+id/button_5"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_5"
             android:layout_margin="@dimen/card_margin"
@@ -72,7 +75,7 @@
 
         <Button
             android:id="@+id/button_6"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_6"
             android:layout_margin="@dimen/card_margin"
@@ -80,15 +83,16 @@
 
         <Button
             android:id="@+id/button_minus"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_minus"
             android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal" />
+            android:layout_gravity="fill_horizontal"
+            style="@style/CalcButton.Operation" />
 
         <Button
             android:id="@+id/button_7"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_7"
             android:layout_margin="@dimen/card_margin"
@@ -96,7 +100,7 @@
 
         <Button
             android:id="@+id/button_8"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_8"
             android:layout_margin="@dimen/card_margin"
@@ -104,7 +108,7 @@
 
         <Button
             android:id="@+id/button_9"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_9"
             android:layout_margin="@dimen/card_margin"
@@ -112,15 +116,16 @@
 
         <Button
             android:id="@+id/button_multiply"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_multiply"
             android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal" />
+            android:layout_gravity="fill_horizontal"
+            style="@style/CalcButton.Operation" />
 
         <Button
             android:id="@+id/button_0"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_0"
             android:layout_columnSpan="2"
@@ -129,7 +134,7 @@
 
         <Button
             android:id="@+id/button_point"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_point"
             android:layout_margin="@dimen/card_margin"
@@ -137,11 +142,12 @@
 
         <Button
             android:id="@+id/button_divide"
-            android:layout_width="0dp"
+            android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
             android:text="@string/button_divide"
             android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal" />
+            android:layout_gravity="fill_horizontal"
+            style="@style/CalcButton.Operation" />
 
     </GridLayout>
 
