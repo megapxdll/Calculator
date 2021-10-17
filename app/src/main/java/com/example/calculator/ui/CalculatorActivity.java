@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.calculator.R;

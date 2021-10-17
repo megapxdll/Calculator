@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:columnCount="4">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_1"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_2"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_3"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -47,7 +47,7 @@
             android:layout_gravity="fill_horizontal"
             android:layout_margin="@dimen/card_margin" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_plus"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -57,7 +57,7 @@
             android:layout_gravity="fill_horizontal"
             style="@style/CalcButton.Operation" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_4"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_5"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -73,7 +73,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_6"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -81,7 +81,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_minus"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -90,7 +90,7 @@
             android:layout_gravity="fill_horizontal"
             style="@style/CalcButton.Operation" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_7"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -98,7 +98,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_8"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -106,7 +106,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_9"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -114,7 +114,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_multiply"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
             android:layout_gravity="fill_horizontal"
             style="@style/CalcButton.Operation" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_0"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -132,7 +132,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_point"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
             android:layout_margin="@dimen/card_margin"
             android:layout_gravity="fill_horizontal" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/button_divide"
             android:layout_width="@dimen/calc_btn_width"
             android:layout_height="wrap_content"
