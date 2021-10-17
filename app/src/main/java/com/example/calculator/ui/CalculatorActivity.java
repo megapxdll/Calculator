@@ -1,18 +1,31 @@
-package com.example.calculator;
+package com.example.calculator.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.calculator.R;
+import com.example.calculator.domain.CalculatorImp;
+import com.example.calculator.domain.Operation;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class CalculatorActivity extends AppCompatActivity implements CalculatorView {
+
     private TextView result_window;
 
     private CalculatorPresenter presenter;
+
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+    }
 
 
     @Override
@@ -79,6 +92,7 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
                 presenter.onDotPressed();
             }
         });
+
     }
 
     @Override

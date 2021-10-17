@@ -1,4 +1,7 @@
-package com.example.calculator;
+package com.example.calculator.ui;
+
+import com.example.calculator.domain.Calculator;
+import com.example.calculator.domain.Operation;
 
 public class CalculatorPresenter {
     private static final int BASE = 10;
