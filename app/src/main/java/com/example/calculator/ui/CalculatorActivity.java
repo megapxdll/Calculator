@@ -28,7 +28,7 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
 
     private static final String ARG_THEME = "ARG_THEME";
 
-    private TextView result_window;
+    private TextView resultWindow;
 
     private CalculatorPresenter presenter;
 
@@ -69,11 +69,11 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
 
         presenter = new CalculatorPresenter(this, new CalculatorImp());
 
-        result_window = findViewById(R.id.result_window);
+        resultWindow = findViewById(R.id.result_window);
 
         Intent launchIntent = getIntent();
 
-        result_window.setText(launchIntent.getStringExtra("WELCOME"));
+        resultWindow.setText(launchIntent.getStringExtra("WELCOME"));
 
         Map<Integer, Integer> digits = new HashMap<>();
         digits.put(R.id.button_0, 0);
@@ -150,6 +150,6 @@ public class CalculatorActivity extends AppCompatActivity implements CalculatorV
 
     @Override
     public void showResult(String result) {
-        result_window.setText(result);
+        resultWindow.setText(result);
     }
 }
